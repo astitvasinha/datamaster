@@ -1,11 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
-function App() {
+import SignIn from './components/SignIn';
+import FileImport from './components/FileImport';
+import ParseExcel from './components/ParseExcel';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+function App(props) {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<SignIn />} />
+        <Route path='/FileImport' element={<FileImport />} />
+        <Route path='/ParseExcel' element={<ParseExcel />} />
+      </Routes>
+    </BrowserRouter>
 
-    </div>
   );
 }
 
