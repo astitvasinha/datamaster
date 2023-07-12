@@ -1,4 +1,5 @@
 import logo from "./IMG (1).jpg"
+import { Link } from "react-router-dom";
 import "./SignIn.css"
 import React from "react"
 const SignIn = (props) => {
@@ -9,7 +10,7 @@ const SignIn = (props) => {
         <h1 className="h1">BHARAT HEAVY ELECTRICALS LIMITED</h1>
       </div>
       <div className="text-position">
-        <h4>SIGN IN</h4>
+        <h3>SIGN IN</h3>
       </div>
       <div>
         <form className="form" style={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
@@ -21,7 +22,7 @@ const SignIn = (props) => {
             <label for="exampleInputPassword1">Password</label>
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
           </div>
-          <button class="btn btn-primary" style={{ display: 'flex', width: '75px', height: '27px', flexDirection: 'column', justifyContent: 'center', marginTop: '50px' }}>Submit</button>
+          <Link to='/FileImport' class="btn btn-primary" style={{ display: 'flex', width: '75px', height: '27px', flexDirection: 'column', justifyContent: 'center', marginTop: '50px' }}>Submit</Link>
 
         </form>
       </div>
