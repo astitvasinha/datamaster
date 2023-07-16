@@ -35,7 +35,11 @@ const ParseExcel = (props) => {
 
   return (
     <div>
+      <div style={{ marginTop: '50px', marginLeft: '400px' }}>
+        <h2>Choose the excel file to display</h2>
+      </div>
       <input
+        style={{ marginTop: '50px', marginLeft: '400px' }}
         type="file"
         onChange={(e) => {
           const file = e.target.files[0];
@@ -43,14 +47,14 @@ const ParseExcel = (props) => {
         }}
       />
 
-      <table class="table container">
+      <table class="table container" style={{ marginLeft: '500px' }}>
         <thead>
           <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Des</th>
+            <th>ID</th>
+            <th>Des</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody style={{ marginTop: '50px' }}>
           {items.map((d) => (
             <tr key={d.ID}>
               <th>{d.ID}</th>
@@ -59,7 +63,7 @@ const ParseExcel = (props) => {
           ))}
         </tbody>
       </table>
-    </div>
+    </div >
   );
 };
 
