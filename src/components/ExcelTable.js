@@ -31,7 +31,7 @@ const ExcelTable = (props) => {
 
   return (
     <div>
-      <DataGrid style={{}}
+      <DataGrid
         columns={columns}
         rows={rows}
         rowKey="id"
